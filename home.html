@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HealTech</title>
+    <style>
+        body{
+            background-color: rgba(0, 174, 255, 0.392);
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            background-color: #253f65;
+            height: 75px;
+            border-radius: 20px;
+            display: flex;
+            padding: 0 20px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-right: 30px;
+        }
+
+        .logo img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 15px;
+            border-radius: 50px;
+        }
+
+        .logo span{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 24px;
+    
+        }
+
+        .nav{
+            list-style: none;
+            display: flex;
+            align-items:center;
+            gap: 30px;
+            margin-left: auto;
+            margin-right: 30px;
+            padding: 0;
+        }
+
+        .nav li a{
+            color:white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #thepage{
+            margin: 20px;
+            min-height: 400px;
+            background-color: #21427E;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            font-size: 75px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .passage{
+            margin-top: 20px;
+            font-size: 14px;
+            
+            font-weight: normal;
+        }
+
+        .select-section{
+            display: flex;
+            color: white;
+            text-align: center;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 60px 20px;
+        }
+
+        .vaccination{
+            height: 100px;
+            background-color: #7EB7F9;
+            padding: 30px 20px;
+            width: 220px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .doctor{
+            height: 100px;
+            background-color: #3F98C4;
+            padding: 30px 20px;
+            width: 220px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .diet{
+            height: 100px;
+            background-color: #2271B2;
+            padding: 30px 20px;
+            width: 220px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .weight{
+            height: 100px;
+            background-color: #317597;
+            padding: 30px 20px;
+            width: 220px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .vaccination:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .doctor:hover{
+             transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .diet:hover{
+             transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        .weight:hover{
+             transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        #text{
+            font-size: large;
+            font-style: italic;
+            color: rgb(1, 5, 30);
+            margin-left: 40px;
+        }
+
+        .bottom{
+            display: flex;
+            justify-content: center;
+            gap: 50px; 
+            flex-wrap: wrap; 
+            margin: 40px 0;
+        }
+
+        .clickable a{
+            color: white;
+            text-decoration: none;
+            background-color: #1B305D;
+            border-radius: 30px;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .footer{
+            background-color: rgb(7, 8, 91);
+            color: aliceblue;
+            font-weight: 800;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px){
+            #thepage{
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="TinySteps-logo-removebg-preview.png" alt="TinySteps">
+            <span>TinySteps</span>
+        </div>
+        <ul class="nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="login-page.html" target="_blank">LOGIN</a></li>
+        </ul>
+    </div>
+
+    <section id="thepage">
+        <span>TinySteps</span>
+        <p class="passage">
+            From tracking vaccination, growth, diet and medical records to consulting trusted doctors based on location and budgets
+            <br> ---everything is managed in one place.
+        </p>
+    </section>
+
+    <nav class="select-section">
+        <div class="vaccination"><h3>Vaccination Tracker</h3></div>
+        <div class="doctor"><h3>Doctors Recommendation</h3></div>
+        <div class="diet"><h3>Diet Planner</h3></div>
+        <div class="weight"><h3>Weight Tracker</h3></div>
+    </nav>
+
+    <section id="text">
+        <h2>Expert advice,<br> Anytime you need it.</h2>
+    </section>
+
+    <div class="bottom">
+        <div class="clickable"><a href="#">Blog</a></div>
+        <div class="clickable"><a href="#">AI Counselor</a></div>
+        <div class="clickable"><a href="#">Our Experts</a></div>
+        <div class="clickable"><a href="#">Contact Us</a></div>
+    </div>
+
+    <footer class="footer">
+        © TinySteps | All right for this page belongs to TinySteps |
+    </footer>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>HealTech</title>
+    <style>
+        body{
+            background-color: rgba(0, 174, 255, 0.392);
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            background-color: #253f65;
+            height: 75px;
+            border-radius: 20px;
+            display: flex;
+            padding: 0 20px;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-right: 30px;
+        }
+        .logo img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 15px;
+            border-radius: 50px;
+        }
+        .logo span{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .nav{
+            list-style: none;
+            display: flex;
+            align-items:center;
+            gap: 30px;
+            margin-left: auto;
+            margin-right: 30px;
+            padding: 0;
+        }
+        .nav li a{
+            color:white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .nav li a:hover{
+            text-decoration:underline;
+            color: yellow;
+        }
+        .mainsection{
+            background-color: azure;
+            color: #253f65;
+            padding: 100px;
+            margin: 10px;
+            border-radius: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+        }
+        .doctors{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .doctor{
+            width: 220px;
+            background: #7eb7f9;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .doctor:hover{
+            transform: translateY(-5px);
+        }
+        .doctor img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .doctor h4{
+            margin: 10px 0;
+            color: #253f65;
+        }
+
+        .details{
+            display: none;
+            padding: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            text-align: left;
+        }
+
+        .doctor:hover .details{
+            display: block;
+        }
+        .book-btn{
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #00b4d8;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .book-btn:hover{
+            background: #0077b6;
+        }
+
+        .bottom{
+            display: flex;
+            justify-content: center;
+            gap: 50px; 
+            flex-wrap: wrap; 
+            margin: 40px 0;
+        }
+
+        .clickable a{
+            color: white;
+            text-decoration: none;
+            background-color: #1B305D;
+            border-radius: 30px;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .footer{
+            background-color: rgb(7, 8, 91);
+            color: aliceblue;
+            font-weight: 800;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px){
+            .mainsection{
+            font-size: 40px;
+            }
+        }
+
+    </style>
+    </head>
+
+    <body>
+
+<div class="main">
+    <div class="logo">
+        <img src="TinySteps-logo-removebg-preview.png" alt="TinySteps">
+        <span>TinySteps</span>
+    </div>
+
+    <ul class="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="login-page.html" target="_blank">LOGIN</a></li>
+    </ul>
+</div>
+
+<div class="mainsection">
+    <p><b>Doctors Recommendation</b></p>
+</div>
+
+<div class="doctors">
+
+    <div class="doctor">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFEmNYiOM_JyQ/profile-displayphoto-scale_200_200/B56ZeiMXyhGoAY-/0/1750772843830?e=1772668800&v=beta&t=70VuLmvqv4ZURdfAEBePGjLJBgXQrJGbKHUe5KepPIY">
+        <h4>Dr Ujjwal Yadav</h4>
+        <div class="details">
+            <p><b>Position:</b> Pediatric Specialist</p>
+            <p><b>Experience:</b> 10 Years</p>
+            <p><b>Location:</b> Kathmandu</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+    <div class="doctor">
+        <img src="https://clinicone.com.np/wp-content/uploads/2022/03/0-02-03-660deab25d89772b713f756680919cc299aa5148d42d55505eeb73266906b80a_9121c225f1c3c287-e1647947157257.jpg">
+        <h4>Dr M. Thapa</h4>
+        <div class="details">
+            <p><b>Position:</b> Pediatric Specialist</p>
+            <p><b>Experience:</b> 8 Years</p>
+            <p><b>Location:</b> Lalitpur</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+    <div class="doctor">
+        <img src="https://www.cmc.edu.np/storage/doctors/June2024/ErWhmybLsFBXv7PP8cEr.jpg">
+        <h4>Sujita Gautam</h4>
+        <div class="details">
+            <p><b>Position:</b> Child Health Expert</p>
+            <p><b>Experience:</b> 6 Years</p>
+            <p><b>Location:</b> Bhaktapur</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+    <div class="doctor">
+        <img src="https://kioch.org.np/almacenamiento/2026/01/bhagwan-1-768x1024.jpg">
+        <h4>MD Mohan Pitambar Rai</h4>
+        <div class="details">
+            <p><b>Position:</b> Child Health Expert</p>
+            <p><b>Experience:</b> 6 Years</p>
+            <p><b>Location:</b> Bhaktapur</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+    <div class="doctor">
+        <img src="https://www.nepalmediciti.com/images/doctors/8614.jpg">
+        <h4>MD Sabina Shilwal</h4>
+        <div class="details">
+            <p><b>Position:</b> Child Health Expert</p>
+            <p><b>Experience:</b> 6 Years</p>
+            <p><b>Location:</b> Bhaktapur</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+    <div class="doctor">
+        <img src="https://kidsclinicnepal.com/wp-content/uploads/2025/05/Dr-santosh-mishra-413-x-552-px.png">
+        <h4>Dr Santosh Mishra</h4>
+        <div class="details">
+            <p><b>Position:</b> Child Health Expert</p>
+            <p><b>Experience:</b> 6 Years</p>
+            <p><b>Location:</b> Bhaktapur</p>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="clickable"><a href="#">Blog</a></div>
+    <div class="clickable"><a href="#">AI Counselor</a></div>
+    <div class="clickable"><a href="#">Our Experts</a></div>
+    <div class="clickable"><a href="#">Contact Us</a></div>
+</div>
+
+<footer class="footer">
+    © TinySteps | All right for this page belongs to TinySteps |
+</footer>
+
+</body>
+</html>
